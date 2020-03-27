@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/css.css">
+    <link rel="stylesheet" href="./font_j1kbicr7qyo/iconfont.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/LiftEffect.js"></script>
+</head>
+<body>
+    <div class="conter fl ">
+        <div class="top">
+            <img src="./images/1.jpg" alt="">
+            <h4>张美康</h4>
+            <p>保定 |  前端码农</p>
+        </div>
+        <div class="bottom">
+            <input type="button" value="获取该简历">
+        </div>
+    </div>
+    <div class="inner fl lift-target" id="inner">
+        <div class="shift t1">
+            <h4>个人信息</h4>
+            <ul>
+                <li>姓名：张美康</li>
+                <li>性别：女</li>
+                <li>民族：汉族</li>
+                <li>学历：专科</li>
+                <li>政治面貌：入党积极分子</li>
+                <li>婚姻状况：未婚</li>
+                <li>联系电话：13472341474</li>
+                <li>邮箱：1253492557@qq.com</li>
+            </ul>
+        </div>
+        <div class="shut t2" id="shut">
+            <h4>教育背景</h4>
+            <ul>
+                <li>2018.9-2021.9</li>
+                <li>河北软件职业技术学院</li>
+                <li>计算机信息管理</li>
+            </ul>
+            <p>专业课程：平面设计、web前端界面应用特效、PHP程序设计、SEO全网优化服务、服务平台优化、实体产品项目优化</p>
+        </div>
+        <div class="after t3" id="after">
+            <ul>
+                <li>1.熟悉并掌握HTML、HTML5、CSS、CSS3、JS编程语言</li>
+                <li>2.熟悉Jequry、Bootstrap、Swiper等框架</li>
+                <li>3.熟悉Photoshop处理图片</li>
+                <li>4.熟悉并掌握vue</li>
+                <li>5.熟悉PHP网站开发语言</li>
+            </ul>
+        </div>
+        <div class="before t4" id="before">
+            <h4>个人自传</h4>
+            <p>
+                本人性格随和，责任心强，待人真诚，公私分明，有很强的团队意识。作为新人，我具备出色的学习能力并且乐于学习，敢于创新，不断追求卓越。我坚信“业精于勤”，“一分耕耘一分收获”，我将会尽我最大的努力得到贵企业的肯定。</p>
+        </div>
+    </div>
+    <div class="title">
+        <div class="top">
+            <img src="./images/1.jpg" alt="">
+        </div>
+        <div class="bottom lift-nav">
+            <ol id="ol" class="lift">
+                <li class="iconfont active">&#xe502;</li>
+                <li class="iconfont">&#xe501;</li>
+                <li class="iconfont">&#xe7ae;</li>
+                <li class="iconfont">&#xe506;</li>
+            </ol>
+        </div>
+    </div>
+    <!-- <script src="./js/js.js"></script> -->
+    <script>
+
+        $(function(){
+            LiftEffect({
+                "control1": ".lift-nav", 						  //侧栏电梯的容器
+                "control2": ".lift",                           //需要遍历的电梯的父元素
+                "target": [".t1",".t2",".t3",".t4"], //监听的内容，注意一定要从小到大输入
+                "current": "active" 						  //选中的样式
+            });
+    
+            
+        })
+    </script>
+</body>
+</html>
